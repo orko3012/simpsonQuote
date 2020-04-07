@@ -2,12 +2,6 @@ import React from "react";
 import "./Quote.css";
 
 class Quote extends React.Component {
-  //  constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     favorite: false,
-  //   };
-  //}
   render() {
     return (
       <figure class="QuoteCard">

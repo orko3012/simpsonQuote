@@ -16,11 +16,11 @@ class App extends React.Component {
 
   getChangeQuote() {
     axios
-      .get("https://thesimpsonsquoteapi.glitch.me/quotes")
+      .get("https://simpsons-quotes-api.herokuapp.com/quotes")
       .then((response) => response.data)
       .then((data) => {
         this.setState({
-          quote: data.quote,
+          quote: data[0].quote,
         });
       });
   }
